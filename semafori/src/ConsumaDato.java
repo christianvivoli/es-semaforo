@@ -1,9 +1,9 @@
-public class EliminaDato extends Thread{
+public class ConsumaDato extends Thread{
     Semaforo verde;
     Semaforo rosso;
     private int leggiDato;
 
-    public EliminaDato(Semaforo verde, Semaforo rosso){
+    public ConsumaDato(Semaforo verde, Semaforo rosso){
         this.verde = verde;
         this.rosso = rosso;
     }

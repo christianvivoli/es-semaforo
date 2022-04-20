@@ -1,10 +1,10 @@
-public class CreaDato extends Thread{
+public class ProduciDato extends Thread{
     Semaforo verde;
     Semaforo rosso;
     int elementi = 5;
     final int attesa = 500;
 
-    public CreaDato(Semaforo verde, Semaforo rosso){
+    public ProduciDato(Semaforo verde, Semaforo rosso){
         this.verde = verde;
         this.rosso = rosso;
     }

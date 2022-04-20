@@ -1,21 +1,21 @@
 public class Semaforo  extends Thread{
-    int luce;
+    int valore;
 
     public Semaforo(int luce){
-        this.luce = luce;
+        this.valore = luce;
     }
 
     synchronized public void semaforoRosso(){
-        while (luce == 0) {
+        while (valore == 0) {
             try {
                 wait();
             } catch (Exception e) {}
         }
-        luce--;
+        valore--;
     }
 
     synchronized public void semaforoVerde(){
-       luce++;
+       valore++;
        notify();
     }
 
