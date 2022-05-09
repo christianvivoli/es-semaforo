@@ -1,4 +1,4 @@
-public class ProduciDato extends Thread{
+public class ProduciDato2 extends Thread{
     Semaforo verde;
     Semaforo rosso;
     int elementi = 5;
@@ -6,7 +6,7 @@ public class ProduciDato extends Thread{
 
     Contatore c=new Contatore(0, 1); //secondo punto
 
-    public ProduciDato(Semaforo verde, Semaforo rosso){
+    public ProduciDato2(Semaforo verde, Semaforo rosso){
         this.verde = verde;
         this.rosso = rosso;
     }
